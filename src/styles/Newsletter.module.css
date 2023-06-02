@@ -1,0 +1,107 @@
+.newsletterBg {
+    background-image: url('/home/newsletter.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.newsletterContent h4 {
+    margin: 3rem 0;
+    padding: 0 0 0 3rem;
+    font-family: mediumfont;
+    position: relative;
+}
+
+.newsletterContent h4::before {
+    position: absolute;
+    content: '';
+    width: 5px;
+    height: 60px;
+    background-image: var(--gradient-bg);
+    left: 0;
+}
+
+.newsletterContent h4 span {
+    font-family: mediumfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.newsletterBtn {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.newsletterBtn button {
+    width: 300px;
+    box-shadow: none;
+}
+
+.newsletterBtn .button {
+    margin: 0 0 3rem 0;
+}
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+    .newsletterBtn {
+        align-items: center;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

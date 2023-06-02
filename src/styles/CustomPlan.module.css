@@ -1,0 +1,1438 @@
+.customPlanHeader {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+    background-image: url('/home/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.headerText h1 {
+    font-size: 60px;
+    font-family: boldfont;
+    color: var(--white);
+    margin: 5rem 0 1.5rem 0;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px var(--black);
+    text-align: center;
+}
+
+.headerText span {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.headerText p {
+    width: max-content;
+    color: var(--white);
+    font-size: 20px;
+    background-image: var(--text-gradient);
+    padding: 2px 15px;
+    text-transform: capitalize;
+    border-radius: 50px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px var(--black);
+}
+
+.categoryBoxBg {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    padding: 1px;
+    overflow: hidden;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.customCategoryImage {
+    height: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.categoryBox {
+    width: 100%;
+    height: 100%;
+    background: hsla(0, 0%, 80%, .14);
+    box-shadow: 0px 0px 30px rgba(10, 142, 249, 0.17);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.selectInput:checked+.categoryBoxBg .categoryBox {
+    background-color: #181818;
+}
+
+.selectInput:checked+.categoryBoxBg {
+    background-image: var(--gradient-bg);
+}
+
+.categoryBoxLabel {
+    width: 100%;
+}
+
+.categoryName {
+    padding: 15px 0 5px 0;
+}
+
+.categoryName h4 {
+    color: var(--white);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-family: mediumfont;
+    margin: 0;
+}
+
+.headerCategorySlider {
+    margin-top: 3rem;
+}
+
+.categoryCheck {
+    width: 22px;
+    height: 22px;
+    border-radius: 100px;
+    background-image: var(--text-gradient);
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+.categoryCheck::before {
+    content: '';
+
+    display: inline-block;
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    background: hsl(0, 0%, 90%);
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.selectInput {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.selectInput:checked+.categoryCheck::before {
+    transform: scale(0);
+}
+
+
+
+.subCategoryBg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('/home/businessGoalsBg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 8rem 0;
+    background-attachment: fixed;
+}
+
+.subCategoryCardBg {
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+    padding: 1px;
+    background-image: var(--gradient-bg);
+}
+
+
+
+
+
+.selectedInput {
+    opacity: 0;
+    position: absolute;
+}
+
+
+
+.subCategoryCard {
+    background-color: #181818d9;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: relative;
+    padding: 1.5rem;
+}
+
+.subCategoryCardOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000000c2;
+    border-radius: 20px;
+    z-index: 2;
+    display: none;
+}
+
+.selectedInput:checked+.subCategoryCardBg .subCategoryCard .subCategoryCardOverlay {
+    display: block;
+}
+
+.subCategoryCardContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .selecteInput:checked+.subCategoryCard {
+    background-color: #1a1e27;
+} */
+
+.iconName {
+    width: 70%;
+}
+
+.price div {
+
+    font-size: 28px;
+    color: var(--white);
+    font-family: semibold;
+    margin-top: -5px;
+}
+
+.price {
+    width: 30%;
+    text-align: right;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.706);
+    text-transform: capitalize;
+}
+
+.subCategoryCard::after {
+    position: absolute;
+    content: '\2713';
+    width: 25px;
+    height: 25px;
+    background-image: var(--gradient-bg);
+    top: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: scale(0);
+    transition: .3s;
+    font-weight: 600;
+    z-index: 3;
+}
+
+.selectedInput:checked+.subCategoryCardBg .subCategoryCard::after {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.subCategoryCardIcon {
+    width: 70px;
+    height: 70px;
+    border: 1px solid transparent;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.subCategoryCardIconOverlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--white);
+}
+
+.subCategoryCardIcon svg path {
+    fill: var(--primary);
+}
+
+.selectedInput:checked+.subCategoryCardBg .subCategoryCard .subCategoryCardIcon {
+    background-image: var(--gradient-bg);
+    border: none;
+}
+
+
+
+.selectedInput:checked+.subCategoryCardBg .subCategoryCard .subCategoryCardIcon .subCategoryCardIconOverlay {
+    background-color: #1a1e27;
+}
+
+.subCategoryCard h4 {
+    font-family: boldfont;
+    /* background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: var(--white);
+    font-size: 24px;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    height: 67px;
+}
+
+
+.cardButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    float: right;
+}
+
+
+.selectInputBtn {
+    width: 49%;
+}
+
+.selectInputBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary);
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: mediumfont;
+}
+
+.selectInputBtn input {
+    /* display: none; */
+    margin-right: 5px;
+}
+
+.viewBtn button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary);
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    padding: 5px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: mediumfont;
+    position: absolute;
+    top: 81.7%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 107px;
+    height: 38px;
+}
+
+/* .subCategoryCardContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} */
+
+.checkbox {
+    margin: 10px;
+    position: relative;
+}
+
+.selecteInput {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.selectedBox {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: max-content;
+    background-image: var(--text-gradient);
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.selectedCategory {
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+.selectedCategory h4 {
+    color: var(--white);
+    border-right: 2px solid var(--white);
+    padding-right: 1rem;
+    font-size: 22px;
+    margin: 0 1rem 0 0;
+}
+
+.selectedBox {
+    width: 100%;
+}
+
+.selectedPointContainer {
+    width: 95%;
+    display: -webkit-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+
+
+.selectedPoint {
+    padding: 8px 8px;
+    color: var(--black);
+    background-color: var(--white);
+    border-radius: 100px;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: mediumfont;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.selectedCategoryBtn button {
+    background-color: var(--black);
+    padding: 10px 2rem;
+    color: var(--white);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.title h2 {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 50px;
+    width: max-content;
+}
+
+.categoryModalContent {
+    display: none;
+}
+
+.categoryModalContent:nth-child(1) {
+    display: block;
+}
+
+.categoryModalContentTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.categoryModalContentTitle div {
+    text-align: right;
+}
+
+.categoryModalContent {
+    width: 100%;
+    height: max-content;
+    padding: 2rem;
+    background-image: url('/home/faq.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+.categoryModalContentTitle h2 {
+    font-family: semibold;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+}
+
+.categoryModalContentTitle h2::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-image: var(--text-gradient);
+    bottom: -1rem;
+}
+
+.categoryModalContentTitle div span {
+    font-family: semibold;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+}
+
+.categoryModalContentTitle div {
+    font-size: 14px;
+    color: #acacac;
+    text-transform: capitalize;
+}
+
+.categoryModalContent h4 {
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+
+.categoryModalContent p,
+.categoryModalContent ul li {
+    color: #acacac;
+    margin: 1.5rem 0;
+}
+
+.loadingButton button {
+    background: linear-gradient(92.23deg, var(--primary) 0%, var(--secondary) 100%);
+    /* box-shadow: 0px 0px 19px var(--primary); */
+    border-radius: 25px;
+    color: var(--white);
+    outline: none;
+    border: none;
+    padding: 12px 2.3rem;
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.loadingButton button span {
+    margin-left: 10px;
+}
+
+
+.selectedTags ul {
+    padding: 0;
+    margin: 0 0 1rem 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selectedTags ul li {
+    border: 2px solid rgba(255, 255, 255, .15);
+    width: max-content;
+    margin: 5px;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.364);
+}
+
+/* =====growth plan==== */
+.growthBg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 6rem 0;
+    background-image: url('/home/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.growthHeader {
+    text-align: center;
+}
+
+.growthHeader h1 {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+    font-size: 60px;
+    margin-top: 6rem;
+}
+
+.growthHeader p {
+    color: var(--white);
+}
+
+.growthPlan .subCategoryCardBg {
+    background-image: var(--gradient-bg);
+}
+
+.dgfPlan {
+    position: relative;
+}
+
+.dgfPlan .viewBtn button {
+    left: 92%;
+}
+
+.dgfPlan h4 {
+    height: auto;
+}
+
+.dgfPlan p {
+    color: var(--white);
+    margin: 1rem 0;
+    opacity: 0.8;
+}
+
+.finalPrice {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.finalPrice span {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+}
+
+.finalPrice div {
+    font-size: 80px;
+    color: var(--white);
+    font-family: semibold;
+    position: relative;
+    width: max-content;
+    margin: -1rem auto;
+}
+
+.finalPrice div::before {
+    position: absolute;
+    content: '';
+    width: 110%;
+    height: 8px;
+    background-color: red;
+    top: 50%;
+    left: -1rem;
+    transform: rotate(-5deg);
+    border-radius: 15px;
+}
+
+
+
+.grabOffer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    margin: 2rem auto;
+    background-image: var(--text-gradient);
+    color: var(--white);
+    font-size: 36px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* ======end======= */
+
+.closeBtn button {
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    right: 2rem;
+    top: 1rem;
+}
+
+
+
+
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .headerText h1 br {
+        display: none;
+    }
+
+    .headerText h1,
+    .title h2 {
+        font-size: 26px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 80%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+        width: 100%;
+    }
+
+    .selectedBox {
+        padding: 1rem 1rem;
+        display: inherit;
+    }
+
+    .selectedPointContainer {
+        width: 100%;
+    }
+
+    .selectedCategoryBtn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .selectedCategory h4 {
+        display: none;
+    }
+
+    .categoryModalContentTitle {
+        display: block;
+    }
+
+    .categoryModalContentTitle h2 {
+        margin-bottom: 2rem;
+    }
+
+    .categoryModalContentTitle div {
+        text-align: left;
+    }
+
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .subCategoryCardContent {
+        display: block;
+    }
+
+    .growthPlan .iconName,
+    .growthPlan .price {
+        width: 100%;
+    }
+
+    .growthPlan .subCategoryCard {
+        padding: 1rem;
+    }
+
+    .growthPlan .subCategoryCardBg {
+        height: 300px;
+    }
+
+    .growthPlan .price {
+        text-align: left;
+    }
+
+    .growthPlan .viewBtn button {
+        left: 70% !important;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 75%;
+    }
+
+    .finalPrice span {
+        font-size: 20px;
+    }
+
+    .finalPrice div {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .grabOffer {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .headerText h1 br {
+        display: none;
+    }
+
+    .headerText h1,
+    .title h2 {
+        font-size: 26px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 80%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+        width: 100%;
+    }
+
+    .selectedBox {
+        padding: 1rem 1rem;
+        display: inherit;
+    }
+
+    .selectedPointContainer {
+        width: 100%;
+    }
+
+    .selectedCategoryBtn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .selectedCategory h4 {
+        display: none;
+    }
+
+    .categoryModalContentTitle {
+        display: block;
+    }
+
+    .categoryModalContentTitle h2 {
+        margin-bottom: 2rem;
+    }
+
+    .categoryModalContentTitle div {
+        text-align: left;
+    }
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .subCategoryCardContent {
+        display: block;
+    }
+
+    .growthPlan .iconName,
+    .growthPlan .price {
+        width: 100%;
+    }
+
+    .growthPlan .subCategoryCard {
+        padding: 1rem;
+    }
+
+    .growthPlan .subCategoryCardBg {
+        height: 300px;
+    }
+
+    .growthPlan .price {
+        text-align: left;
+    }
+
+    .growthPlan .viewBtn button {
+        left: 70% !important;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 75%;
+    }
+
+    .finalPrice span {
+        font-size: 20px;
+    }
+
+    .finalPrice div {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .grabOffer {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .headerText h1 br {
+        display: none;
+    }
+
+    .headerText h1,
+    .title h2 {
+        font-size: 26px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 65%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+        width: 100%;
+    }
+
+    .selectedBox {
+        padding: 1rem 1rem;
+        display: inherit;
+    }
+
+    .selectedPointContainer {
+        width: 100%;
+    }
+
+    .selectedCategoryBtn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .selectedCategory h4 {
+        display: none;
+    }
+
+
+    .categoryModalContentTitle {
+        display: block;
+    }
+
+    .categoryModalContentTitle h2 {
+        margin-bottom: 2rem;
+    }
+
+    .categoryModalContentTitle div {
+        text-align: left;
+    }
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .subCategoryCardContent {
+        display: block;
+    }
+
+    .growthPlan .iconName,
+    .growthPlan .price {
+        width: 100%;
+    }
+
+    .growthPlan .subCategoryCard {
+        padding: 1rem;
+    }
+
+    .growthPlan .subCategoryCardBg {
+        height: 300px;
+    }
+
+    .growthPlan .price {
+        text-align: left;
+    }
+
+    .growthPlan .viewBtn button {
+        left: 70% !important;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 75%;
+    }
+
+    .finalPrice span {
+        font-size: 20px;
+    }
+
+    .finalPrice div {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .grabOffer {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .headerText h1 br {
+        display: none;
+    }
+
+    .headerText h1,
+    .title h2 {
+        font-size: 26px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 65%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+        width: 100%;
+    }
+
+    .selectedBox {
+        padding: 1rem 1rem;
+        display: inherit;
+    }
+
+    .selectedPointContainer {
+        width: 100%;
+    }
+
+    .selectedCategoryBtn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .selectedCategory h4 {
+        display: none;
+    }
+
+
+    .categoryModalContentTitle {
+        display: block;
+    }
+
+    .categoryModalContentTitle h2 {
+        margin-bottom: 2rem;
+    }
+
+    .categoryModalContentTitle div {
+        text-align: left;
+    }
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .viewBtn button {
+        top: 78.7%;
+        left: 83%;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 85%;
+    }
+
+    .finalPrice span {
+        font-size: 20px;
+    }
+
+    .finalPrice div {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .grabOffer {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 65%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .viewBtn button {
+        top: 78.7%;
+        left: 83%;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 85%;
+    }
+
+    .grabOffer {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 65%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+
+    /* ======growth plan===== */
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .viewBtn button {
+        top: 78.7%;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 85%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 65%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+
+    .growthHeader h1 {
+        font-size: 30px;
+        margin-top: 0rem;
+    }
+
+    .growthPlan .viewBtn button {
+        top: 78.7%;
+    }
+
+    .dgfPlan .viewBtn button {
+        left: 85%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 75%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 75%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 75%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+
+    .headerText h1,
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .subCategoryCard h4 {
+        font-size: 20px;
+    }
+
+    .price div {
+        font-size: 26px;
+    }
+
+    .cardButton {
+        width: 100%;
+    }
+
+    .viewBtn button {
+        left: 79%;
+    }
+
+    .selectedCategory {
+        display: block;
+    }
+
+    .selectedCategory ul li {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .selectedCategory h4 {
+        border-right: 0;
+        border-bottom: 2px solid var(--white);
+        padding: 0 0 5px 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

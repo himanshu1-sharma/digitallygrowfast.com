@@ -1,0 +1,372 @@
+.planCardBg {
+    width: 100%;
+    height: auto;
+    background-image: var(--gradient-bg);
+    border-radius: 28px;
+    padding: 1px;
+    position: relative;
+    margin: 1.5rem auto auto auto;
+}
+
+.planCard {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(224deg, #010108 0%, #002152 100%);
+    border-radius: 28px;
+    padding: 2rem;
+    position: relative;
+}
+
+.priceTag {
+    width: 115px;
+    height: 140px;
+    background-image: url('/icons/priceTag.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1.5rem;
+    color: var(--white);
+    transform: rotate(-30deg);
+    position: absolute;
+    top: -3rem;
+    right: -3rem;
+}
+
+.priceTag p {
+    margin: 0;
+    color: var(--white);
+    font-family: mediumfont;
+}
+
+.planCardBox {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    float: right;
+}
+
+.planCard h4 {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.planCard h4 span {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: semibold;
+}
+
+.planCard ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+    list-style-type: circle;
+}
+
+.planCard ul li {
+    padding: 15px 0;
+    color: var(--white);
+    opacity: 0.8;
+    font-size: 15px;
+    border-bottom: 1px solid #0098ff2e;
+}
+
+.planCard h6 {
+    color: var(--white);
+    margin: 2rem 0 1rem 0;
+}
+
+.planCard h6 span {
+    font-size: 40px;
+    font-family: semibold;
+}
+
+.planCard p {
+    color: var(--white);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 100px;
+}
+
+.title h2 {
+    color: var(--white);
+    text-align: center;
+    font-size: 45px;
+}
+
+.title h2 span {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.planBtn button {
+    background: linear-gradient(92.23deg, var(--primary) 0%, var(--secondary) 100%);
+    /* box-shadow: 0px 0px 19px var(--primary); */
+    border-radius: 25px;
+    color: var(--white);
+    outline: none;
+    border: none;
+    padding: 12px 2.3rem;
+}
+
+.planCardIcon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .planCardBg {
+        margin: 1rem 0 0 0;
+    }
+
+
+
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .planCardBg {
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .planCardBg {
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .planCardBg {
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+
+    .title h2 {
+        font-size: 30px;
+    }
+
+    .planCardBg {
+        margin: 1rem 0 0 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .planCardBox {
+        display: inherit;
+        width: 100%;
+    }
+
+    .planCardBg {
+        width: 100%;
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .planCardBox {
+        width: 100%;
+    }
+
+    .planCardBg {
+        margin: 6rem 0 0 0;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+    .planCardBox {
+        width: 100%;
+    }
+
+    .planCardBg {
+        margin: 0 0 0 0;
+        width: 310px;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {
+    .planCardBox {
+        width: 100%;
+    }
+
+    .planCardBg {
+        margin: 0 0 0 0;
+        width: 310px;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+    .planCardBox {
+        width: 100%;
+    }
+
+    .planCardBg {
+        margin: 0 0 0 0;
+        width: 310px;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+    .planCardBox {
+        width: 100%;
+    }
+
+    .planCardBg {
+        margin: 0 0 0 0;
+        width: 310px;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {
+    .planCardBox {
+        width: 95%;
+    }
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) {
+
+    .priceTag {
+        top: -4rem;
+        right: 0rem;
+    }
+}

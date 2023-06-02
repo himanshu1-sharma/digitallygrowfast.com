@@ -1,0 +1,198 @@
+.insideBg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 8rem 0 2rem 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.insideBg {
+    background-image: url('/category/background.png');
+}
+
+.title {
+    text-align: center;
+}
+
+.title h2 {
+    color: var(--white);
+    font-size: 40px;
+    font-family: semibold;
+}
+
+.title h2 span,
+.setpCard h4 {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.title p {
+    color: var(--white);
+    font-size: 18px;
+    margin-top: 1rem;
+    opacity: 0.6;
+}
+
+.insideList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.insideListCard {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.insideListCard.one .insideImgBox {
+    background-image: url('/giveaway/GraphicDesign.png');
+}
+
+.insideListCard.two .insideImgBox {
+    background-image: url('/giveaway/Website.png');
+}
+
+.insideListCard.three .insideImgBox {
+    background-image: url('/giveaway/Onlineplatform.png');
+}
+
+.insideListCard.four .insideImgBox {
+    background-image: url('/giveaway/Socialmedia.png');
+}
+
+.insideListCard.five .insideImgBox {
+    background-image: url('/giveaway/Digrowfa.png');
+}
+
+.insideImgBox {
+    width: 250px;
+    height: 250px;
+    background-color: var(--black);
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.insideImgBoxOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0000009d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.insideImgBoxOverlay h4 {
+    color: var(--white);
+    font-size: 34px;
+    font-family: semibold;
+    text-shadow: 1px 1px 2px var(--black);
+}
+
+.insideCardContent p {
+    margin-top: 1rem;
+    color: var(--white);
+
+}
+
+.setpCardBg {
+    width: 100%;
+    height: 100%;
+    background-image: var(--gradient-bg);
+    padding: 1px;
+    overflow: hidden;
+    margin: 1rem 0;
+    border-radius: 20px;
+}
+
+.setpCard {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(224deg, #010108 0%, #002152 100%);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    border-radius: 20px;
+}
+
+.setpCard span {
+    color: var(--white);
+    font-size: 20px;
+}
+
+.setpCard h4 {
+    font-size: 45px;
+    width: max-content;
+}
+
+.setpCard p {
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.setpCard ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 2rem 0 0 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.setpCard ul li svg {
+    width: 25px;
+    height: 25px;
+}
+
+.setpCard ul li {
+    margin-right: 1rem;
+}
+
+.giveawayCheckInput h4 {
+    font-size: 16px;
+    margin-top: 1.5rem;
+}
+
+
+
+.conditionContent {
+    margin-top: 2rem;
+}
+
+.conditionContent small {
+    margin-top: 3rem;
+    background-color: #0098ff08;
+    border-left: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.conditionContent p {
+    color: var(--white);
+}
+
+.screenshotPrev {
+    width: 100%;
+    height: 200px;
+    border: 1px solid red;
+    margin-top: 1rem;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

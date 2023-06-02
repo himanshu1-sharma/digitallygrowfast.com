@@ -1,0 +1,2442 @@
+.navigationBg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 1rem 0;
+    z-index: 99;
+}
+
+.socialLinks {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    /* background-color: red; */
+    height: 100%;
+}
+
+
+
+.socialLinks ol {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    justify-content: flex-end;
+    background: var(--primary);
+    width: max-content;
+    padding: 6px 10px;
+    border-radius: 50px;
+}
+
+.socialLinks ol li {
+    cursor: pointer;
+    font-size: 17px;
+    margin-right: 1.5rem;
+    width: max-content;
+}
+
+.socialLinks ol li:last-child {
+    margin: 0;
+}
+
+.socialLinks ol li a {
+    color: var(--white) !important;
+}
+
+.socialLinks ol li svg {
+    width: 23px;
+    height: 25px;
+
+}
+
+.headerBg,
+.clientBg,
+.programForBg,
+.commentsBg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('/home/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* .headerBg::after {
+    position: fixed;
+    content: '';
+    width: 531px;
+    height: 100%;
+    background-image: url('/OnlineGrowthRevolution/header1.png');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+}
+
+.headerBg::before {
+    position: fixed;
+    content: '';
+    width: 652px;
+    height: 100%;
+    background-image: url('/OnlineGrowthRevolution/header2.png');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+} */
+
+.headerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+
+
+.headerContent h2,
+.title h2 {
+    font-size: 90px;
+    margin: 3rem 0 1rem 0;
+    font-family: thinfont;
+    text-transform: uppercase;
+}
+
+.title {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.title p {
+    color: var(--white);
+    font-family: mediumfont;
+    font-size: 20px;
+}
+
+.smalltitle {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.smalltitle h2 {
+    color: var(--white);
+    font-family: mediumfont;
+    text-transform: uppercase;
+}
+
+.clientSlider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.clientSlider ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 3rem 0 0 0;
+    display: flex;
+}
+
+.clientSlider ul li {
+    -webkit-animation: translatestf 30s linear infinite;
+    animation: translatestf 30s linear infinite;
+}
+
+@-webkit-keyframes translatestf {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+@keyframes translatestf {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+.clientSliderCard {
+    margin: 2rem;
+    text-align: center;
+    width: 150px;
+}
+
+
+.clientSliderCard p {
+    color: var(--white);
+    margin-top: 1rem;
+}
+
+.gradientText {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.headerContent h4 {
+    font-family: semibold;
+    font-size: 46px;
+}
+
+.headerContent h1 {
+    -webkit-text-stroke: 2px var(--black);
+    text-shadow: 2px 2px 0px var(--black);
+    font-size: 75px;
+    color: var(--primary);
+    font-family: extrabold;
+    letter-spacing: 0.395em;
+    margin: 2rem 0;
+}
+
+.numberBg {
+    width: 342px;
+    height: 240px;
+    background: var(--primary);
+    box-shadow: 4.89796px 6.85714px 71.5102px rgba(10, 142, 249, 0.37);
+    border-radius: 7px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.numberBox {
+    width: 487px;
+    height: 162px;
+    background: var(--text-gradient);
+    box-shadow: 0px 9.85263px 21.9789px rgba(0, 0, 0, 0.25);
+    border-radius: 7.57895px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 98px;
+    font-family: boldfont;
+    color: var(--white);
+    -webkit-text-stroke: 2px var(--black);
+    text-shadow: 2px 2px 0px var(--black);
+}
+
+.headerContent p {
+    color: var(--white);
+    margin: 2rem 0;
+}
+
+.grabButton {
+    background-color: var(--primary);
+    padding: 15px 30px;
+    border-radius: 50px;
+    color: var(--white);
+    width: max-content;
+    margin: 2rem auto;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--white);
+    box-shadow: 0px 0px 31px #0A8EF9;
+    position: relative;
+    font-family: lightfont;
+}
+
+.clientCard {
+    background-color: var(--primary);
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px var(--black), 2px 2px 0 1px var(--black);
+    border-radius: 10px;
+    width: 100%;
+    height: 217px;
+    margin-top: 1.5rem;
+}
+
+
+.whyChooseCard {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.whyChooseIcon {
+    width: 15%;
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.whyChooseContent {
+    width: 85%;
+}
+
+.whyChooseContent h4 {
+    color: var(--white);
+    font-family: mediumfont;
+}
+
+.whyChooseContent p {
+    color: var(--white);
+}
+
+.shadowEffect {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 250px;
+    background: var(--primary);
+    filter: blur(180.829px);
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nextYou {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 37px;
+    font-family: boldfont;
+}
+
+.clientCardImg {
+    width: 35%;
+    height: 170px;
+    background-color: var(--white);
+    border-radius: 10px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid var(--black);
+    box-shadow: 1px 1px var(--black), 1px 1px 0 1px var(--black);
+}
+
+.clientCardContent {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+}
+
+.cardTime {
+    position: absolute;
+    font-size: 12px;
+    background-color: var(--primary);
+    border: 1px solid var(--black);
+    box-shadow: 1px 1px var(--black), 1px 1px 0 1px var(--black);
+    color: var(--white);
+    border-radius: 6px;
+    padding: 5px 10px;
+    top: -1rem;
+    right: 0;
+}
+
+.clientCardInfo h4 {
+    color: var(--white);
+    font-size: 22px;
+    font-family: semibold;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clientCardInfo {
+    width: 65%;
+    padding: 0 0 0 10px;
+}
+
+.clientCardInfo p {
+    color: var(--white);
+    margin: 0;
+    font-size: 16px;
+}
+
+.clientCardInfo ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 1rem 0 1rem 0;
+}
+
+.clientCardInfo ul li {
+    width: 25px;
+    height: 25px;
+    background-color: var(--white);
+    margin-right: 1rem;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientCardInfo ul li svg {
+    width: 15px;
+    height: 15px;
+    color: var(--primary);
+}
+
+.clientCardLogo {
+    width: 100%;
+    height: 58px;
+    background-color: var(--white);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--black);
+    box-shadow: 1px 1px var(--black), 1px 1px 0 1px var(--black);
+}
+
+.viewAll {
+    margin: 3rem 0;
+    text-align: center;
+    font-size: 24px;
+    font-family: semibold;
+}
+
+.clientLogo {
+    width: 100%;
+    height: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.programForCard {
+    width: 100%;
+    background-color: #02172f;
+    position: relative;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.programForCard::after {
+    position: absolute;
+    content: '';
+    width: 200px;
+    height: 200px;
+    background: var(--primary);
+    filter: blur(150px);
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.programForIcon {
+    width: 13%;
+}
+
+.programForContent {
+    width: 87%;
+    display: flex;
+    align-items: center;
+}
+
+.stepsCard {
+    display: block;
+}
+
+.programForIconBox {
+    width: 50px;
+    height: 50px;
+    background-color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.programForIconBox svg {
+    width: 30px;
+    height: 30px;
+}
+
+.programForContent h4 {
+    color: var(--white);
+    font-family: mediumfont;
+    font-size: 20px;
+    position: relative;
+    margin: 0;
+}
+
+.programForContent p {
+    color: var(--white);
+    opacity: 0.9;
+    margin: 10px 0 0 0;
+    position: relative;
+}
+
+.offerCard {
+    width: 100%;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 6rem;
+    background-color: #02172f;
+    position: relative;
+}
+
+.offerCardShadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.offerCardShadow::after {
+    position: absolute;
+    content: '';
+    width: 450px;
+    height: 450px;
+    background: var(--primary);
+    filter: blur(280.829px);
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offerNumber {
+    position: absolute;
+    top: -2.3rem;
+    left: 2rem;
+    border: 2px solid var(--primary);
+    background-color: #02172f;
+    border-radius: 10px;
+    width: 122px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--white);
+    font-family: mediumfont;
+    overflow: hidden;
+}
+
+.offerNumber::before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background: var(--primary);
+    filter: blur(26px);
+    top: 3rem;
+}
+
+.offerTitle {
+    background-color: transparent;
+    padding: 2.5rem 2rem 1rem 2rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offerTitle h4 {
+    font-size: 32px;
+    font-family: mediumfont;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.offerCardPrice {
+    background-color: var(--white);
+    padding: 10px 10px;
+    border-radius: 6px;
+    position: relative;
+    width: max-content;
+}
+
+.offerCardPrice span {
+    font-family: semibold;
+}
+
+.offerList {
+    padding: 2rem;
+}
+
+.offerList ul li {
+    margin-bottom: 1.5rem;
+    color: var(--white);
+    opacity: 0.9;
+}
+
+.offerList ul li:last-child {
+    margin-bottom: 0;
+}
+
+.offerList small {
+    color: var(--primary);
+    margin: 0 0 0 1rem;
+    font-family: mediumfont;
+    font-size: 16px;
+}
+
+.processCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    background-color: #02172f;
+    position: relative;
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+.processCard::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 150px;
+    background: var(--primary);
+    filter: blur(106.82900000000001px);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.totalValue {
+    text-align: center;
+
+}
+
+.totalValue h4 {
+    font-size: 36px;
+    color: var(--white);
+}
+
+.cutPrice {
+    font-size: 50px;
+    color: var(--white);
+    font-family: semibold;
+    position: relative;
+}
+
+.cutPrice::after {
+    position: absolute;
+    content: '';
+    width: 250px;
+    height: 5px;
+    background-color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.processCard h4 {
+    height: auto;
+    margin-top: 1rem;
+    font-family: semibold;
+}
+
+.commentsBg {
+    padding: 0 0 8rem 0;
+    /* background-color: #02081b;  */
+    position: relative;
+}
+
+.commentCard {
+    width: 100%;
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px var(--black), 2px 2px 0 1px var(--black);
+    border-radius: 10px;
+    padding: 1.5rem;
+
+}
+
+.commentCardProfile {
+    display: flex;
+}
+
+.profile {
+    width: 55px;
+    height: 55px;
+    border: 1px solid var(--black);
+    border-radius: 50%;
+    /* background-image: url('https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1600'); */
+    background-position: 28% 22%;
+    background-size: cover;
+}
+
+.profilePic {
+    width: 20%;
+}
+
+.profileContent {
+    width: 80%;
+}
+
+.profileContent {
+    padding-left: 5px;
+}
+
+.profileContent h4 {
+    font-family: mediumfont;
+    font-size: 20px;
+    margin: 0;
+}
+
+.profileContent span {
+    font-size: 14px;
+    color: gray;
+}
+
+.comment p {
+    font-size: 15px;
+    margin: 1rem 0 0 0;
+}
+
+.faqAccordionBg {
+    background-color: #02172f;
+    position: relative;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    padding: 2rem 3rem;
+}
+
+.closeBtn button {
+    width: 30px;
+    height: 30px;
+    background-color: var(--black);
+    border-radius: 50%;
+    position: absolute;
+    top: 2rem;
+    left: 3.5rem;
+    border: none;
+    outline: none;
+    z-index: 99;
+}
+
+.closeBtn button svg {
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+}
+
+.formBox form {
+    position: relative;
+}
+
+.formBox::before {
+    position: absolute;
+    content: '';
+    width: 531px;
+    height: 100%;
+    background-image: url('/OnlineGrowthRevolution/header1.png');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.formBox form input,
+.formBox form textarea,
+.formBox form select {
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px var(--black), 2px 2px 0 1px var(--black);
+    border-radius: 5px;
+    background-color: var(--white);
+    outline: 0;
+    color: var(--black) !important;
+    resize: none;
+    padding: 25px 25px;
+    font-family: mediumfont;
+    margin-top: 1.5rem;
+}
+
+.formBox form input::placeholder,
+.formBox form textarea::placeholder,
+.formBox form select::placeholder {
+    color: var(--black);
+}
+
+.formBox form select {
+    color: var(--black);
+}
+
+.formBox form select option {
+    background-color: var(--white) !important;
+    color: var(--black);
+}
+
+.formConditions p {
+    color: var(--black);
+    font-size: 14px;
+    margin: 1rem 0;
+}
+
+.submitBtn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submitBtn button {
+    border: 1px solid var(--black);
+    box-shadow: 2px 2px var(--black), 2px 2px 0 1px var(--black);
+    border-radius: 5px;
+    padding: 15px 25px;
+    background-color: var(--primary);
+    color: var(--white);
+    margin-top: 1.5rem;
+}
+
+
+
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 30px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+    .numberBg {
+        width: 80%;
+        height: 180px;
+    }
+
+    .numberBox {
+        width: 125%;
+        height: 125px;
+        font-size: 70px;
+    }
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 30px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+    .numberBg {
+        width: 80%;
+        height: 180px;
+    }
+
+    .numberBox {
+        width: 125%;
+        height: 125px;
+        font-size: 70px;
+    }
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 30px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+    .numberBg {
+        width: 80%;
+        height: 180px;
+    }
+
+    .numberBox {
+        width: 125%;
+        height: 125px;
+        font-size: 70px;
+    }
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 30px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 60px;
+    }
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 30px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+    .numberBg {
+        width: 80%;
+        height: 180px;
+    }
+
+    .numberBox {
+        width: 125%;
+        height: 125px;
+        font-size: 70px;
+    }
+
+
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 14px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+
+    .navigationLogo img {
+        max-width: 90px !important;
+    }
+
+    .headerBg::after,
+    .headerBg::before {
+        display: none;
+    }
+
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 50px;
+    }
+
+    .headerContent h4 {
+        font-size: 30px;
+    }
+
+    .socialLinks ol {
+        display: none;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+
+
+    .title h2 {
+        font-size: 50px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+        display: inherit;
+    }
+
+    .offerTitle h4 {
+        font-size: 20px;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .offerCardPrice {
+        font-size: 12px;
+    }
+
+    .offerList small {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .totalValue h4 {
+        font-size: 26px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+    .faqAccordionBg {
+        padding: 1rem 1rem;
+    }
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+
+    .whyChooseCard {
+        display: inherit;
+    }
+
+    .whyChooseIcon {
+        width: 100%;
+    }
+
+    .whyChooseContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .clientSliderCard {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+    .headerBg {
+        height: auto;
+    }
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 60px;
+    }
+
+    .headerContent h4 {
+        font-size: 50px;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .offerTitle {
+        font-size: 20px;
+        text-shadow: 1px 1px 0px var(--black);
+    }
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {
+    .headerBg {
+        height: auto;
+    }
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 40px;
+        -webkit-text-stroke: 1px var(--black);
+        text-shadow: 1px 1px 0px var(--black);
+    }
+
+    .headerContent h4 {
+        font-size: 50px;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .offerTitle {
+        font-size: 20px;
+        text-shadow: 1px 1px 0px var(--black);
+    }
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+    .headerBg {
+        height: auto;
+    }
+
+    .headerContent {
+        margin-top: 6rem;
+    }
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 60px;
+    }
+
+    .headerContent h4 {
+        font-size: 50px;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .offerNumber {
+        top: -1.6rem;
+        left: 1rem;
+        width: 80px;
+        height: 50px;
+        font-size: 25px;
+    }
+
+    .offerTitle {
+        font-size: 20px;
+        text-shadow: 1px 1px 0px var(--black);
+    }
+
+    .offerList {
+        padding: 1rem 10px;
+        font-size: 14px;
+    }
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+    .headerBg {
+        height: auto;
+    }
+
+
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+    .headerContent h1,
+    .headerContent h2 {
+        font-size: 60px;
+    }
+
+    .headerContent h4 {
+        font-size: 50px;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+
+
+
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {
+    .headerBg {
+        height: auto;
+    }
+
+
+
+
+
+    .headerContent h1 {
+        letter-spacing: 10px;
+    }
+
+
+
+    .headerContent h4 {
+        font-size: 50px;
+    }
+
+    .navigationBg {
+        position: inherit;
+    }
+
+    .headerContent {
+        position: inherit;
+        transform: none
+    }
+
+    .grabButton {
+        font-size: 18px;
+    }
+
+    .title h2 {
+        font-size: 70px;
+    }
+
+    .viewAll {
+        font-size: 16px;
+    }
+
+    .programForCard {
+        padding: 1rem;
+        display: inherit;
+    }
+
+    .programForContent {
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .programForContent h4 {
+        font-size: 18px;
+        height: auto;
+    }
+
+
+    .offerTitle {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+
+    .processCard {
+        height: auto;
+    }
+
+    .profile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .profileContent h4 {
+        font-size: 16px;
+    }
+
+    .profileContent span {
+        font-size: 12px;
+    }
+
+
+
+    .commentsBg {
+        padding: 0 0 1rem 0;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

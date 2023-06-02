@@ -1,0 +1,288 @@
+.checkoutBg {
+    padding: 4rem 0;
+    position: relative;
+}
+
+.checkoutBg::after {
+    position: fixed;
+    content: '';
+    width: 531px;
+    height: 100%;
+    background-image: url('/OnlineGrowthRevolution/header1.png');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    right: 0;
+    top: 0;
+}
+
+.checkoutBg::before {
+    position: fixed;
+    content: '';
+    width: 652px;
+    height: 100%;
+    background-image: url('/OnlineGrowthRevolution/header2.png');
+    background-position: left;
+    background-size: auto;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0;
+}
+
+.checkoutDetail {
+    margin-top: 5rem;
+    position: relative;
+}
+
+.checkoutDetail h1 {
+    font-family: semibold;
+    font-size: 30px;
+}
+
+.checkoutUserDetail {
+    margin-top: 1.5rem;
+}
+
+.checkoutUserDetail label {
+    color: #6E6F78;
+    font-size: 16px;
+}
+
+.checkoutUserDetail div {
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-family: mediumfont;
+    margin-top: 8px;
+}
+
+.checkoutCard {
+    position: fixed;
+    top: 15%;
+    right: 15%;
+    width: 577px;
+    height: auto;
+    background-color: #F3F5F9;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 99;
+}
+
+.cardContent {
+    width: 100%;
+    height: 287px;
+    background-image: url('/OnlineGrowthRevolution/cardBg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cardContent h2 {
+    color: var(--white);
+    font-family: semibold;
+    margin-top: 1rem;
+}
+
+.cardContent h2 span {
+    color: var(--primary);
+    font-family: semibold;
+}
+
+.cardContentList {
+    padding: 2rem;
+}
+
+.cardContentList ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.cardContentList ul li {
+    color: #6E6F78;
+}
+
+.cardContentList ul li b {
+    color: var(--black);
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #9c9da3;
+    margin-bottom: 1.5rem;
+}
+
+.cardContentList button {
+    width: 100%;
+    padding: 1rem;
+    color: var(--white);
+    background-color: var(--primary);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    text-transform: capitalize;
+}
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .checkoutCard {
+        width: 100%;
+        position: inherit;
+    }
+
+    .cardContent {
+        height: 200px;
+    }
+
+    .cardContentList {
+        padding: 1rem;
+    }
+
+    .cardContentList ul li {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .checkoutCard {
+        width: 400px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+    .checkoutCard {
+        width: 450px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {
+    .checkoutCard {
+        width: 500px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+    .checkoutCard {
+        width: 500px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+    .checkoutCard {
+        width: 500px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {
+    .checkoutCard {
+        width: 500px;
+        right: 5%;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

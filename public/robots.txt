@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.digitallygrowfast.com/
+
+# Sitemaps
+Sitemap: https://www.digitallygrowfast.com/sitemap.xml

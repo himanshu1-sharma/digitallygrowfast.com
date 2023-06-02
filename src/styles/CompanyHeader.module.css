@@ -1,0 +1,120 @@
+.headerBg {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 8rem 0;
+    background-image: url('/home/background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.headerContent {
+    margin-top: 10rem;
+}
+
+.headerContent h1 {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: max-content;
+    font-size: 70px;
+}
+
+.headerContent p {
+    color: var(--white);
+}
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .headerContent h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .headerContent {
+        margin-top: 0;
+    }
+
+    .headerBg {
+        padding: 7rem 0 3rem 0;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .headerContent h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .headerContent {
+        margin-top: 0;
+    }
+
+    .headerBg {
+        padding: 7rem 0 3rem 0;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .headerContent h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .headerContent {
+        margin-top: 0;
+    }
+
+    .headerBg {
+        padding: 7rem 0 3rem 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .headerContent h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .headerContent {
+        margin-top: 0;
+    }
+
+    .headerBg {
+        padding: 7rem 0 3rem 0;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .headerContent h1 {
+        font-size: 30px;
+        margin: 0 auto;
+    }
+
+    .headerContent {
+        margin-top: 0;
+    }
+
+    .headerBg {
+        padding: 7rem 0 3rem 0;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

@@ -1,0 +1,384 @@
+.homeHeaderBg {
+    background-image: radial-gradient(circle, #08040f63 0%, #01192b80 37%, #10081c 100%);
+
+}
+
+.headerBg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* background-image: url('/home/background.png'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+.headerBg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+.headerOverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #08040f2e 0%, #01192b93 50%, #10081c 100%);
+    /* background-image: linear-gradient(var(--black), transparent, var(--black)); */
+    top: 0;
+}
+
+
+
+.headerContent {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    position: relative;
+}
+
+.headerImg {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* background-color: red; */
+}
+
+.headerContent h1 {
+    font-size: 74px;
+    font-family: boldfont;
+    color: var(--white);
+    margin: 1.5rem 0;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 2px var(--black);
+}
+
+.headerContent h1 span {
+    font-family: boldfont;
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+}
+
+.headerContent mark {
+    background: linear-gradient(90.03deg, #12103E 1.73%, rgba(18, 16, 62, 0) 150.89%);
+    border-radius: 50px;
+    width: max-content;
+    padding: 6px 10px;
+    color: var(--white);
+    font-size: 20px;
+}
+
+.headerTagLine {
+    background: linear-gradient(90.03deg, #12103E 1.73%, rgba(18, 16, 62, 0) 150.89%);
+    border-radius: 50px;
+    width: max-content;
+    padding: 6px 10px;
+}
+
+.headerTagLine h5 {
+    margin: 0;
+    border-radius: 47px;
+    color: var(--white);
+    font-size: 14px;
+    font-family: semibold;
+    text-shadow: 1px 1px 2px var(--black);
+    font-size: 18px;
+}
+
+.headerTagLine h5 span {
+    text-shadow: 1px 1px 2px var(--black);
+}
+
+.headerContent p {
+    color: var(--white);
+    width: 60%;
+    text-shadow: 1px 1px 2px var(--black);
+    font-size: 20px;
+}
+
+.headerContent button {
+    margin-top: 1rem;
+}
+
+.headerImg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headerImg img {
+    max-width: 90%;
+}
+
+
+
+@media (min-width: 319.98px) and (max-width: 379.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        position: inherit;
+    }
+
+
+}
+
+@media (min-width: 380px) and (max-width: 424.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        position: inherit;
+    }
+
+
+}
+
+@media (min-width: 425px) and (max-width: 575.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        position: inherit;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 768.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        position: inherit;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width: 991.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+        margin-top: 5rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        position: inherit;
+    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 33px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1279.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1299.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1359.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1360px) and (max-width: 1439.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1536.98px) {
+    .headerTagLine {
+        width: 100%;
+    }
+
+    .headerContent {
+        padding: 1rem;
+    }
+
+    .headerContent h1 {
+        font-size: 50px;
+    }
+
+    .headerContent p {
+        width: 100%;
+    }
+
+    .headerImg {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .headerImg img {
+        max-width: 70%;
+    }
+}
+
+@media (min-width: 1537px) and (max-width: 1920px) {}

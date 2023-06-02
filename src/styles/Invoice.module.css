@@ -1,0 +1,128 @@
+/* .invoiceBg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.invoiceBox {
+    width: 794px;
+    height: 1080px;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.invoiceHeader {
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.invoiceHeader ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.invoiceHeader ul li {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: boldfont;
+} */
+
+.studentInvoice {
+    /* max-width: 800px; */
+    margin: 5rem 0 2rem 0;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+    border-radius: 6px;
+}
+
+.invoiceBg .table>:not(caption)>*>* {
+    border-bottom-width: 0;
+}
+
+.invoiceTableHeader img {
+    max-width: 200px;
+}
+
+.invoiceLeftContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.invoiceHeaderText b {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.invoiceHeaderText p {
+    font-size: 14px;
+}
+
+.invoiceTableHeader table tbody tr td {
+    vertical-align: middle;
+}
+
+.invoiceHeaderText h1 {
+    font-family: mediumfont;
+    text-transform: uppercase;
+}
+
+.invoiceTableDetailText h2 {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.invoiceTableDetailText p {
+    margin-bottom: 10px;
+}
+
+.invoiceProductDetail table thead tr th:first-child {
+    width: 300px;
+}
+
+.invoiceProductDetail table thead tr th {
+    font-size: 15px;
+    background-color: whitesmoke;
+    width: 210px;
+    font-weight: 100;
+}
+
+.invoiceProductDetail table thead tr th b {
+    font-weight: 700;
+}
+
+.invoiceProductDetail table tbody tr td {
+    padding: 2rem 10px 6rem 10px;
+    font-size: 15px;
+}
+
+.printBtn {
+    text-align: center;
+}
+
+.printBtn button {
+    padding: 15px 50px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    outline: none;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-radius: 6px;
+}
+
+.invoiceTag {
+    margin-top: 3rem;
+    font-size: 12px;
+}
